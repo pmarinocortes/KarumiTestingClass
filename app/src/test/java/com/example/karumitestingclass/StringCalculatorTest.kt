@@ -36,6 +36,11 @@ class StringCalculatorTest {
         evaluateStringCalculator("1,2,3", 6)
     }
 
+    @Test
+    fun returnsTheSumOfTheNumberSepareatedByNewLine() {
+        evaluateStringCalculator("1\n2", 3)
+    }
+
     private fun evaluateStringCalculator(input: String, expectedResult: Int) {
         val result = stringCalculator.add(input)
         assertEquals(expectedResult, result)

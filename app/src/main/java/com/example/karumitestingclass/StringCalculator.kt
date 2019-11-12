@@ -5,6 +5,6 @@ class StringCalculator {
         if (number.isEmpty()) {
             0
         } else {
-            number.split(",").map { it.toInt() }.sum()
+            number.split(",", "\n").map { it.toInt() }.sum()
         }
 }
