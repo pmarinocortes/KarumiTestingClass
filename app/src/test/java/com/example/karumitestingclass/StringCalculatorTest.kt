@@ -40,6 +40,16 @@ class StringCalculatorTest {
     fun returnsTheSumOfTheNumberSepareatedByNewLine() {
         evaluateStringCalculator("1\n2", 3)
     }
+//
+//    @Test(expected = CustomException::class)
+//    fun returnsException() {
+//        stringCalculator.add("1")
+//    }
+//
+//    @Test(expected = CustomException::class)
+//    fun returnsExceptionWithAPoint() {
+//        stringCalculator.add("1.2")
+//    }
 
     private fun evaluateStringCalculator(input: String, expectedResult: Int) {
         val result = stringCalculator.add(input)
